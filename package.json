@@ -1,0 +1,36 @@
+{
+  "name": "call-watcher",
+  "description": "Node.js profiling tool that watches method calls and provides statistics reporters to analyze possible callback piling and memory problems",
+  "version": "0.0.1",
+  "author": "SaleMove",
+  "contributors": [
+    {
+      "name": "Madis Nõmme",
+      "email": "madis@salemove.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/salemove/node-call-watcher.git"
+  },
+  "engines": {
+    "node": "0.10.15"
+  },
+  "dependencies": {
+    "redis": "latest",
+    "coffee-script": "latest",
+    "underscore": "latest",
+    "cli-table": "latest",
+    "stack-trace": "latest",
+    "csv": "latest",
+    "async": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest",
+    "sinon": "latest"
+  },
+  "scripts": {
+    "watch": "./node_modules/.bin/mocha --growl --watch test/**/*.coffee"
+  }
+}
